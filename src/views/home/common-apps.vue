@@ -31,6 +31,7 @@ interface AppItem {
   name: string
   appCode?: string
 }
+
 export default defineComponent({
   name: 'commonApps',
   setup () {
@@ -46,77 +47,64 @@ export default defineComponent({
 
     const allDialogShow = ref<boolean>(false)
     const appList :AppItem[] = reactive(
-      [
-        {
-          id: 1001,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '一周精选',
-          appCode: 'FlightPreparation'
-        },
-        {
-          id: 1002,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '智能生活',
-          appCode: 'PeriodicSummary'
-        },
-        {
-          id: 1003,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '吃喝玩乐'
-        },
-        {
-          id: 1004,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '窝者家居',
-          appCode: 'QAROverRun'
-        },
-        {
-          id: 1005,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '图书文教',
-          appCode: 'FlightPreparation'
-        },
-        {
-          id: 1006,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '一周精选',
-          appCode: 'PeriodicSummary'
-        },
-        {
-          id: 1007,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '智能生活'
-        },
-        {
-          id: 1008,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '吃喝玩乐',
-          appCode: 'QAROverRun'
-        },
-        {
-          id: 1009,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '窝者家居',
-          appCode: 'FlightPreparation'
-        },
-        {
-          id: 1010,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '图书文教',
-          appCode: 'PeriodicSummary'
-        },
-        {
-          id: 1011,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '一周精选'
-        },
-        {
-          id: 1012,
-          icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-          name: '智能生活',
-          appCode: 'QAROverRun'
-        }
-      ]
+      [{
+        id: 1001,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '一周精选',
+        appCode: 'FlightPreparation'
+      }, {
+        id: 1002,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '智能生活',
+        appCode: 'PeriodicSummary'
+      }, {
+        id: 1003,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '吃喝玩乐'
+      }, {
+        id: 1004,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '窝者家居',
+        appCode: 'QAROverRun'
+      }, {
+        id: 1005,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '图书文教',
+        appCode: 'FlightPreparation'
+      }, {
+        id: 1006,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '一周精选',
+        appCode: 'PeriodicSummary'
+      }, {
+        id: 1007,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '智能生活'
+      }, {
+        id: 1008,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '吃喝玩乐',
+        appCode: 'QAROverRun'
+      }, {
+        id: 1009,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '窝者家居',
+        appCode: 'FlightPreparation'
+      }, {
+        id: 1010,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '图书文教',
+        appCode: 'PeriodicSummary'
+      }, {
+        id: 1011,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '一周精选'
+      }, {
+        id: 1012,
+        icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
+        name: '智能生活',
+        appCode: 'QAROverRun'
+      }]
     )
 
     const expandApp = () => {

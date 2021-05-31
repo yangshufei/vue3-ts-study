@@ -1,0 +1,140 @@
+body .el-table {
+  background-color: transparent;
+  color: $default-font-color;
+  .el-table__header-wrapper {
+    th {
+      background-color: $table-th-bg;
+      border-bottom-color: $default-line-color;
+      font-weight: normal;
+      .caret-wrapper {
+        height: fit-content;
+        .sort-caret {
+          &.ascending {
+            top: -13px;
+          }
+          &.descending {
+            top: 0;
+          }
+        }
+      }
+    }
+    tr {
+      background-color: transparent;
+    }
+    thead {
+      color: $default-font-color;
+    }
+  }
+  .el-table__body-wrapper {
+    tr, td {
+      background-color: transparent;
+      border-bottom-color: $default-line-color;
+    }
+  }
+  .cell {
+    white-space: pre-line;
+  }
+}
+body .el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: transparent;
+}
+
+// 简单的折叠组件
+// 隐藏header，自己触发
+.el-collapse.single-collapse {
+  border: none;
+  .el-collapse-item {
+    .el-collapse-item__header {
+      display: none;
+    }
+    .el-collapse-item__wrap {
+      background-color: transparent;
+      border: none;
+    }
+    .el-collapse-item__content {
+      padding-bottom: 0;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+}
+
+// form 组件自定义样式
+.app-form {
+  .el-form-item__label {
+    color: white;
+  }
+}
+// 下拉选择框自定义样式
+.app-select {
+  .el-input {
+    .el-input__inner {
+      background-color: $default-btn-bg;
+      color: $default-font-color;
+      font-size: $sm-font-size;
+      border: none;
+      border-radius: 6px;
+      padding-right: 0;
+      width: 70px;
+      height: 30px;
+    }
+  }
+}
+.app-select-popper.el-select-dropdown,
+.app-select-popper.el-dropdown-menu{
+  background-color: $popper-bg;
+  border: none;
+  width: 195px;
+  .el-scrollbar {
+    .el-select-dropdown__wrap {
+      .el-scrollbar__view {
+        .el-select-dropdown__item.selected {
+          background-color: $select_selected_bg;
+        }
+        .el-select-dropdown__item {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .popper__arrow {
+    border-bottom-color: $popper-bg!important;
+    &::after {
+      border-bottom-color: $popper-bg!important;
+    }
+  }
+  .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: transparent;
+    color: $default-font-color;
+  }
+}
+
+// 全屏弹窗
+.el-dialog {
+  .el-dialog__header {
+    color: inherit;
+    .el-dialog__title {
+      color: inherit;
+    }
+    .el-dialog__headerbtn {
+      color: inherit;
+      .el-dialog__close {
+        color: inherit;
+      }
+    }
+  }
+  .el-dialog__body {
+    color: inherit;
+  }
+  &.is-fullscreen {
+    background-image: radial-gradient(circle closest-side, #3A749B 0%, #2C4461 100%);
+    .el-dialog__headerbtn {
+      font-size: 18px;
+      padding: 5px;
+      top: 30px;
+      right: 40px;
+    }
+  }
+}
