@@ -4,16 +4,15 @@ import Home from '../views/home/index.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    component: Home,
+    meta: { title: '首页' }
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/eventLevel',
+    name: 'eventLevel',
+    component: () => import('@/views/event-level/index.vue'),
+    meta: { title: '事件等级' }
   }
 ]
 

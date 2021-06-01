@@ -124,7 +124,6 @@ export default defineComponent({
     onMounted(() => {
       state.appListConst = appList.slice(0, 9)
       // appListConst.value = appList.slice(0, 4)
-      console.log(state.appListConst)
     })
     return {
       expandAppIcon,

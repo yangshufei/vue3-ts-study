@@ -1,6 +1,6 @@
 <template>
-  <div class="typical-overrun-event">
-    <homeModule title="事件类型">
+  <div class="typical-event">
+    <HomeModule title="事件类型">
       <template #content>
         <div class="event-item" v-for="(item, index) in constList" :key="index">{{item}}</div>
         <el-collapse v-model="collapseStatus" class="single-collapse">
@@ -15,17 +15,17 @@
           </div>
         </div>
       </template>
-    </homeModule>
+    </HomeModule>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue'
-import homeModule from './components/home-module.vue'
+import HomeModule from './components/home-module.vue'
 export default defineComponent({
-  name: 'Home',
+  name: 'typicalEvent',
   components: {
-    homeModule
+    HomeModule
   },
   setup () {
     const lengthLimit = ref<number>(2)
@@ -67,7 +67,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.typical-overrun-event {
+.typical-event {
   .event-item {
     font-weight: 600;
     line-height: 22px;
