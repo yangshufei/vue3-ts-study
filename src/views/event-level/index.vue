@@ -11,6 +11,7 @@ import { defineComponent } from 'vue'
 import Bar from './bar.vue'
 import TotalTable from './total-table.vue'
 export default defineComponent({
+  name: 'eventLevel',
   components: {
     Bar,
     TotalTable

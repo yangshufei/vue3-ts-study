@@ -50,8 +50,8 @@ export default defineComponent({
       [{
         id: 1001,
         icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
-        name: '一周精选',
-        appCode: 'FlightPreparation'
+        name: '事件等级',
+        appCode: 'eventLevel'
       }, {
         id: 1002,
         icon: 'https://alipic.lanhuapp.com/SketchPng59cfa12c319744c574372ff90b3237156d77bc79af867431789d5992f999a97d',
