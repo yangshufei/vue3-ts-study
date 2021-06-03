@@ -31,31 +31,31 @@ export default defineComponent({
         {
           title: '发生次数/发生率TOP5事件',
           list: [
-            { index: 1, name: '起飞俯仰率小', value: 80, probability: 75 },
-            { index: 2, name: '起飞俯仰率小', value: 75, probability: 72.4 },
-            { index: 3, name: '起飞俯仰率小', value: 68, probability: 65 },
-            { index: 4, name: '起飞俯仰率小', value: 55, probability: 63 },
-            { index: 5, name: '起飞俯仰率小', value: 50, probability: 59 }
+            { index: 1, name: '最新政策', value: 80, probability: 75 },
+            { index: 2, name: '最新政策', value: 75, probability: 72.4 },
+            { index: 3, name: '最新政策', value: 68, probability: 65 },
+            { index: 4, name: '最新政策', value: 55, probability: 63 },
+            { index: 5, name: '最新政策', value: 50, probability: 59 }
           ]
         },
         {
           title: '环比上升TOP5事件',
           list: [
-            { index: 1, name: '起飞俯仰率小', value: 80, probability: 75 },
-            { index: 2, name: '起飞俯仰率小', value: 75, probability: 72.4 },
-            { index: 3, name: '起飞俯仰率小', value: 68, probability: 65 },
-            { index: 4, name: '起飞俯仰率小', value: 55, probability: 63 },
-            { index: 5, name: '起飞俯仰率小', value: 50, probability: 59 }
+            { index: 1, name: '最新政策', value: 80, probability: 75 },
+            { index: 2, name: '最新政策', value: 75, probability: 72.4 },
+            { index: 3, name: '最新政策', value: 68, probability: 65 },
+            { index: 4, name: '最新政策', value: 55, probability: 63 },
+            { index: 5, name: '最新政策', value: 50, probability: 59 }
           ]
         },
         {
           title: '同比上升TOP5事件',
           list: [
-            { index: 1, name: '起飞俯仰率小', value: 80, probability: 75 },
-            { index: 2, name: '起飞俯仰率小', value: 75, probability: 72.4 },
-            { index: 3, name: '起飞俯仰率小', value: 68, probability: 65 },
-            { index: 4, name: '起飞俯仰率小', value: 55, probability: 63 },
-            { index: 5, name: '起飞俯仰率小', value: 50, probability: 59 }
+            { index: 1, name: '最新政策', value: 80, probability: 75 },
+            { index: 2, name: '最新政策', value: 75, probability: 72.4 },
+            { index: 3, name: '最新政策', value: 68, probability: 65 },
+            { index: 4, name: '最新政策', value: 55, probability: 63 },
+            { index: 5, name: '最新政策', value: 50, probability: 59 }
           ]
         }
       ] as topicDataType[]

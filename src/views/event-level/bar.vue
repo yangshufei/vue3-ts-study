@@ -1,6 +1,6 @@
 <template>
   <div class="bar">
-    <div class="title">近13个月时间发生次数和发生率</div>
+    <div class="title">近12个月时间发生次数和发生率</div>
     <div>事件等级：
       <div class="tag" :class="computerBGC('1')" @click="()=>{active='1'}">全部</div>
       <div class="tag" :class="computerBGC('2')" @click="()=>{active='2'}">轻度</div>

@@ -3,7 +3,7 @@
     <el-row>
       <el-col v-for="item of formItem" :key="item.prop" :sm="12" :md="item.width">
         <el-form-item :label="`${item.label}:`" :label-width="item.labelWidth">
-          <InputSelect v-if="item.type === 'airport'" :selectList="item.data" v-model:selectvalue="formData[item.prop]"></InputSelect>
+          <InputSelect v-if="item.type === 'inputSelect'" :selectList="item.data" v-model:selectvalue="formData[item.prop]"></InputSelect>
           <el-select v-else-if="item.type === 'select'" v-model="formData[item.prop]" size="mini" class="app-select" placeholder="" popper-class="pd-select app-select-popper">
             <el-option v-for="option of item.data" :key="option.id" :label="option.name" :value="option.id"></el-option>
           </el-select>
@@ -43,7 +43,7 @@ export default defineComponent({
       formItem: [
         {
           label: '机场',
-          type: 'airport',
+          type: 'inputSelect',
           prop: 'airport',
           data: [
             { name: 'ZBAA/ZBA', id: '1', fzm: 'ZBAA', szm: 'ZBY', label: '哆啦A梦机场' },
@@ -53,7 +53,7 @@ export default defineComponent({
           width: 7
         },
         {
-          label: '跑道',
+          label: '年龄',
           type: 'select',
           prop: 'pd',
           data: [
@@ -65,29 +65,29 @@ export default defineComponent({
           labelWidth: '88px'
         },
         {
-          label: '机型',
+          label: '型号',
           type: 'radio',
           prop: 'jx',
           data: [
             { name: 'A320', id: '0' },
             { name: 'A330', id: '1' },
-            { name: '全部机型', id: '2' }
+            { name: '全部型号', id: '2' }
           ],
           width: 8,
           labelWidth: '60px'
         },
         {
-          label: '飞行阶段',
+          label: '事件阶段',
           type: 'radio',
           prop: 'fxjd',
           data: [
-            { name: '起飞', id: '0' },
-            { name: '着陆', id: '1' }
+            { name: '开始', id: '0' },
+            { name: '结束', id: '1' }
           ],
           width: 7
         },
         {
-          label: '超限率类型',
+          label: '事件类型',
           type: 'radio',
           prop: 'cxllx',
           data: [

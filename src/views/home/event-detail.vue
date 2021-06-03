@@ -24,7 +24,7 @@ interface EventDetailItem {
   name: string
   level: string
   peakValue: number | string
-  flightInfo: string
+  eventInfo: string
 }
 
 export default defineComponent({
@@ -41,13 +41,13 @@ export default defineComponent({
         { prop: 'name', label: '事件名称', align: 'center', minWidth: 130, sortable: false },
         { prop: 'level', label: '事件等级', align: 'center', minWidth: 100, sortable: 'custom' },
         { prop: 'peakValue', label: '事件峰值', align: 'center', minWidth: 100, sortable: 'custom' },
-        { prop: 'flightInfo', label: '事件信息', headerAlign: 'left', align: 'left', minWidth: 150, sortable: false }
+        { prop: 'eventInfo', label: '事件信息', headerAlign: 'left', align: 'left', minWidth: 150, sortable: false }
       ]
       state.tableList = [
-        { id: 43221, name: '平飘距离过长', level: '三级', peakValue: 12345, flightInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
-        { id: 43222, name: '接地速度大', level: '三级', peakValue: 12345, flightInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
-        { id: 43223, name: '接地姿态小', level: '三级', peakValue: 12345, flightInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
-        { id: 43224, name: '起飞俯仰率小', level: '三级', peakValue: 12345, flightInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' }
+        { id: 43221, name: '大新闻', level: '三级', peakValue: 12345, eventInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
+        { id: 43222, name: '大新闻', level: '三级', peakValue: 12345, eventInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
+        { id: 43223, name: '大新闻', level: '三级', peakValue: 12345, eventInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' },
+        { id: 43224, name: '大新闻', level: '三级', peakValue: 12345, eventInfo: '12/06 B1236 RD315 ZBAA-ZUUU\n机组：小俊， 张三' }
       ]
     })
     return {

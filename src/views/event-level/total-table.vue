@@ -2,17 +2,17 @@
   <div class="total-table">
     <div class="title">近13个月超限事件汇总</div>
     <el-table :data="tableList">
-        <el-table-column prop="name" label="事件名称" align="center" min-width="100px"></el-table-column>
-        <el-table-column prop="a" label="轻度超限次数" align="center" min-width="130px"></el-table-column>
-        <el-table-column prop="b" label="轻度超限率" align="center" min-width="100px" sortable>
+        <el-table-column prop="name" label="姓名" align="center" min-width="100px"></el-table-column>
+        <el-table-column prop="a" label="省份" align="center" min-width="130px"></el-table-column>
+        <el-table-column prop="b" label="年龄" align="center" min-width="100px" sortable>
           <template v-slot="scope">
             <div :class="compareRate(scope.row)">{{scope.row.b}}<span>?</span></div>
           </template>
         </el-table-column>
-        <el-table-column prop="c" label="机队轻度超限率" align="center" min-width="100px"></el-table-column>
-        <el-table-column prop="d" label="严重超限次数" align="center" min-width="200px"></el-table-column>
-        <el-table-column prop="e" label="严重超限率" align="center" min-width="200px" sortable></el-table-column>
-        <el-table-column prop="f" label="机队严重超限率" align="center" min-width="200px"></el-table-column>
+        <el-table-column prop="c" label="地址" align="center" min-width="100px"></el-table-column>
+        <el-table-column prop="d" label="商品名称" align="center" min-width="200px"></el-table-column>
+        <el-table-column prop="e" label="描述" align="center" min-width="200px" sortable></el-table-column>
+        <el-table-column prop="f" label="商品详情" align="center" min-width="200px"></el-table-column>
     </el-table>
   </div>
 </template>
@@ -36,10 +36,10 @@ export default defineComponent({
     const tableList = ref<List[]>([])
     onMounted(() => {
       tableList.value = [
-        { id: 43221, name: '平飘距离过长', a: '1', b: '2', c: '1' },
-        { id: 43222, name: '接地速度大', a: '1', b: '2', c: '1' },
-        { id: 43223, name: '接地姿态小', a: '1', b: '2', c: '1' },
-        { id: 43224, name: '起飞俯仰率小', a: '1', b: '2', c: '1' }
+        { id: 43221, name: '王小虎', a: '1', b: '2', c: '1' },
+        { id: 43222, name: '王小虎', a: '1', b: '2', c: '1' },
+        { id: 43223, name: '王小虎', a: '1', b: '2', c: '1' },
+        { id: 43224, name: '王小虎', a: '1', b: '2', c: '1' }
       ]
     })
 
