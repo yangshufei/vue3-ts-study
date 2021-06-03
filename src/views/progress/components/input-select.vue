@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch } from 'vue'
+import { defineComponent, PropType, ref, watch } from 'vue'
 interface OptionData {
   name: string
   id: string
@@ -33,9 +33,9 @@ export default defineComponent({
       type: String
     },
     selectList: {
-      type: Array,
+      type: Array as PropType<OptionData[]>,
       default: () => {
-        return [] as OptionData[]
+        return []
       }
     }
   },
