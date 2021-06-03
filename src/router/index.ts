@@ -13,6 +13,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'eventLevel',
     component: () => import('@/views/event-level/index.vue'),
     meta: { title: '事件等级' }
+  },
+  {
+    path: '/progress',
+    name: 'progress',
+    component: () => import('@/views/progress/index.vue'),
+    meta: { title: '事件进度' }
   }
 ]
 
